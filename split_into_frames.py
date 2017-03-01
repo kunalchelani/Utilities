@@ -16,7 +16,6 @@ success,image  = vidcap.read()
 print success
 #Uncomment to change the starting time of split process
 #vidcap.set(0,100);
-
 #This gives you roughly framerate/5 frames per second. Adjust as per needs
 frameRate = vidcap.get(5)
 
