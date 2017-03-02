@@ -9,7 +9,7 @@ if arglen == 1:
 	sys.exit()
 
 videoPath  = sys.argv[1]
-videoName = (videoPath.split("/"))[-1]
+videoName = ((videoPath.split("/"))[-1]).split(".")[0]
 
 vidcap = cv.VideoCapture(videoPath)
 success,image  = vidcap.read()
